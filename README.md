@@ -1,36 +1,47 @@
-# ninja_run_flutter_demo
+# ninja run flutter demo
 
-Source code and project resources for ninja_run_flutter_demo.
+**Portfolio project** · A Flutter cross-platform demo game with assets and platform targets.
 
 ## Overview
 
-This repository contains the source code and resources for **ninja_run_flutter_demo**.
+A Flutter cross-platform demo game with assets and platform targets.
 
-## Technologies
+## Technology Stack
 
-- C
-- C++
-- CMake
-- Dart
-- HTML
-- Kotlin
-- Objective-C
-- Swift
+- `Dart`
+- `Flutter`
+- `Cross-platform UI`
+- `HTML`
 
-## Getting Started
+## How the Repository Works
 
-```bash
-git clone https://github.com/Kanishq10/ninja_run_flutter_demo.git
-cd ninja_run_flutter_demo
+```mermaid
+flowchart LR
+    N0["App launch<br/> Initialize Flutter UI"]
+    N1["Data / Game state<br/> Resolve state or assets"]
+    N0 --> N1
+    N2["Widget tree<br/> Render the cross-platform interface"]
+    N1 --> N2
 ```
 
-Review the project files and configuration to install dependencies and start the application.
+| Stage | Responsibility |
+|---|---|
+| **App launch** | Initialize Flutter UI |
+| **Data / Game state** | Resolve state or assets |
+| **Widget tree** | Render the cross-platform interface |
 
-## Repository Contents
+## Concepts Covered
+
+- Cross-platform widgets
+- State and navigation
+- Assets and configuration
+- Responsive layout
+- Platform integration
+
+## Repository Map
 
 - `.gitignore`
 - `.metadata`
-- `README.md`
 - `analysis_options.yaml`
 - `android`
 - `assets`
@@ -41,8 +52,11 @@ Review the project files and configuration to install dependencies and start the
 - `pubspec.lock`
 - `pubspec.yaml`
 - `web`
-- `windows`
 
-## Contributing
+## Recruiter Summary
 
-Contributions are welcome. Fork the repository, create a feature branch, and open a pull request.
+This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+
+---
+
+<sub>Documentation is concise and project-focused; source code was not modified.</sub>
