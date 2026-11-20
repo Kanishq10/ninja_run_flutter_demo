@@ -1,44 +1,47 @@
 # ninja run flutter demo
 
-**Portfolio project** · A Flutter cross-platform demo game with assets and platform targets.
+A cross-platform Flutter runner-style game demo with platform-specific project targets and assets.
 
 ## Overview
 
-A Flutter cross-platform demo game with assets and platform targets.
+The repository contains an implemented application or analysis project with code organized around its primary runtime, interface, data, or automation responsibilities.
+
+## Key Features
+
+- Cross-platform Flutter interface
+- Widget composition and state management
+- Asset and platform configuration
+- Platform-specific build targets
 
 ## Technology Stack
 
-- `Dart`
-- `Flutter`
-- `Cross-platform UI`
-- `HTML`
+| Area | Technology |
+|---|---|
+| Platform | Dart |
+| Platform | Flutter |
+| Library / Framework / Tool | HTML |
 
-## How the Repository Works
+## Architecture and Data Flow
 
 ```mermaid
 flowchart LR
-    N0["App launch<br/> Initialize Flutter UI"]
-    N1["Data / Game state<br/> Resolve state or assets"]
+    N0["Application Start<br/> Flutter initializes the application and assets."]
+    N1["State Resolution<br/> Location, timer, or game state is calculated."]
+    N2["Widget Build<br/> The widget tree is built from current state."]
+    N3["Platform Rendering<br/> The UI renders through the platform target."]
     N0 --> N1
-    N2["Widget tree<br/> Render the cross-platform interface"]
     N1 --> N2
+    N2 --> N3
 ```
 
 | Stage | Responsibility |
 |---|---|
-| **App launch** | Initialize Flutter UI |
-| **Data / Game state** | Resolve state or assets |
-| **Widget tree** | Render the cross-platform interface |
+| **Application Start** | Flutter initializes the application and assets. |
+| **State Resolution** | Location, timer, or game state is calculated. |
+| **Widget Build** | The widget tree is built from current state. |
+| **Platform Rendering** | The UI renders through the platform target. |
 
-## Concepts Covered
-
-- Cross-platform widgets
-- State and navigation
-- Assets and configuration
-- Responsive layout
-- Platform integration
-
-## Repository Map
+## Repository Structure
 
 - `.gitignore`
 - `.metadata`
@@ -52,11 +55,22 @@ flowchart LR
 - `pubspec.lock`
 - `pubspec.yaml`
 - `web`
+- `windows`
 
-## Recruiter Summary
+## Setup
 
-This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+1. Install the Flutter SDK and required platform tooling.
+2. Run `flutter pub get`.
+3. Start the application with `flutter run`.
 
----
+## Usage
 
-<sub>Documentation is concise and project-focused; source code was not modified.</sub>
+Open the application entry point in the browser or run it with the project platform tools. Interact through the available controls and observe the rendered state.
+
+## Configuration
+
+No mandatory repository-specific configuration is documented by the project structure. Environment or runtime options may be defined inside the relevant entry-point file or platform settings.
+
+## Verification
+
+- Run the project entry point and verify the primary success and error paths.
